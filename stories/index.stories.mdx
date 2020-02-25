@@ -1,0 +1,59 @@
+import { Story, Preview, Meta, Props, html } from '@open-wc/demoing-storybook';
+
+import '../demo-static-files-bug.js';
+
+<Meta 
+  title="DemoStaticFilesBug"
+  parameters={{
+    component: "demo-static-files-bug",
+    options: { selectedPanel: "storybookjs/knobs/panel" }
+  }}
+/>
+
+# DemoStaticFilesBug
+
+A component for...
+
+## Features:
+
+- a
+- b
+- ...
+
+## How to use
+
+### Installation
+
+```bash
+yarn add demo-static-files-bug
+```
+
+```js
+import 'demo-static-files-bug/demo-static-files-bug.js';
+```
+
+## Kitten image
+
+<img src="public/kitten.jpg"/>
+
+<Preview withToolbar>
+  <Story name="Simple">
+    {html`
+      <demo-static-files-bug></demo-static-files-bug>
+    `}
+  </Story>
+</Preview>
+
+## API
+
+<Props of="demo-static-files-bug" />
+
+## Variations
+
+###### Custom Title
+
+<Story name="Custom Title">
+  {html`
+    <demo-static-files-bug .title=${'Hello World'}></demo-static-files-bug>
+  `}
+</Story>
